@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garagem</title>
+</head>
+<header>
+    <button id="botoes" class="interna" ><a href="../inside/inside.html">Área Interna</a></button>
+    <button id="botoes" class="externa" ><a href="../outside/outside.html">Área Externa</a></button>
+    <button id="botoes" class="sair"><a href="../index.html">Sair</a></button>
+  </header>
+<body>
+
+    <div class="container1">
+        <div class="vaga"><h1>81</h1></div>
+        <div class="vaga"><h1>82</h1></div>
+        <div class="vaga"><h1>83</h1></div>  
+        <div class="vaga"><h1>84</h1></div>
+
+    </div>
+
+    <div class="container2">
+        <div class="vaga"><h1>77</h1></div>
+        <div class="vaga"><h1>78</h1></div>
+        <div class="vaga"><h1>79</h1></div>
+        <div class="vaga"><h1>80</h1></div> 
+    </div>
+
+    <div class="vaga75">
+        <div class="vaga"><h1>75</h1></div>
+    </div>
+
+    <div class="container3">
+        <div class="vaga"><h1>85</h1></div>
+        <div class="vaga"><h1>86</h1></div>
+        <div class="vaga"><h1>87</h1></div>
+
+    </div>
+
+    <div class="vaga76">
+        <div class="vaga"><h1>76</h1></div>
+    </div>
+</body>
+
+    <div class="orientation"><h1>Gire a tela!</h1></div>
+
+</html>
+
+<style>
+    .orientation{
+        display: none;
+    }
+
+#botoes{
+        background-color: rgb(73, 151, 229);
+        border: none;
+        
+        border-radius: 10px;
+        color: white;
+    }
+
+    .container1 h1{
+        color:aliceblue;
+        font-size: x-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        transform: rotate(100deg);
+    }
+    .container2 h1{
+        color:aliceblue;
+        font-size: x-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        transform: rotate(90deg);
+        text-align: center;
+    }
+
+    .container3 h1{
+        font-size: x-large;
+        color:aliceblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+    .vaga75 h1{
+        font-size: x-large;
+        color:aliceblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+
+    .vaga76 h1{
+        font-size: x-large;
+
+        color:aliceblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        transform: rotate(-90deg);
+
+    }
+
+    body{
+        
+        background-image: url("../img/minascentro.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size:1600px 1000px;
+        
+    }
+    img {
+        opacity:0.5;
+    }
+
+    .container1 {
+        transform: rotate(-100deg);
+        position: relative;
+        margin-top: -10%;
+        left: -20%;
+        margin-left: 50%;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .container2 {
+        left: -10%;
+        top: -150px;
+        transform: rotate(-90deg);
+        position: relative;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .container3{
+        top:150%;
+        left: 60%;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+
+
+    .vaga75 {
+        top: 340px;
+        left: 69%;
+        position: relative;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .vaga76 {
+        transform: rotate(90deg);
+        left:5%;
+        top: 580px;
+        position: relative;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+    .vaga {
+      width: 40px;
+      height: 7rem;
+      background-color: blue;
+      text-align: center;
+      border: 5px solid black;
+    }
+
+
+    @media screen and (max-width: 950px) and (max-height: 500px) and (orientation: landscape) {
+        
+        
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.52), rgba(0, 0, 0, 0.73)) ,url("../img/minascentro.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size:2000px 1200px;
+        opacity: 0.9;
+        transform: scale(1.0);
+        
+    }
+
+        .container1 {
+        transform: rotate(-100deg);
+        position: relative;
+        margin-top: -10%;
+        left: -25%;
+        margin-left: 50%;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .container2 {
+        left: -20%;
+        top: -180px;
+        transform: rotate(-90deg);
+        position: relative;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .container3{
+        top:150%;
+        left: 51%;
+        position: relative;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+
+
+    .vaga75 {
+        top: 200px;
+        left: 69%;
+        position: relative;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .vaga76 {
+        transform: rotate(90deg);
+        left:5%;
+        top: 430px;
+        position: relative;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        flex-wrap: wrap;
+    }
+    .vaga {
+      width: 30px;
+      height: 5rem;
+      background-color: blue;
+      text-align: center;
+      border: 5px solid black;
+    }
+
+    
+}
+
+@media only screen and (orientation: portrait) {
+    header{
+        display:none;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.52), rgba(0, 0, 0, 0.73)) ,url("../img/minascentro.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size:2000px 1200px;
+        opacity: 0.9;
+        transform: scale(0.5);
+        transform-origin: 10% 500px;
+        
+    }
+
+    .container1{
+        display:none;
+
+    }
+    .container2{
+        display: none;
+    }
+
+    .container3{
+        display: none;
+    }
+
+    .vaga75{
+        display:none;
+    }
+
+    .vaga76{
+        display:none;
+    }
+
+
+
+    .orientation{
+        display: flex;
+    }
+    div{
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 80px;
+        border-radius: 15px;
+        color: #fff;
+        }
+    }
+
+</style>
+
+<script> 
+    const vaga = document.querySelectorAll(".vaga");
+
+    let corAtual = "azul";
+
+    vaga.forEach(vaga => {
+        vaga.addEventListener("click", function() {
+        if (corAtual === "azul") {
+      vaga.style.backgroundColor = "red";
+      corAtual = "vermelho";
+    } else if(corAtual === "vermelho"){
+      vaga.style.backgroundColor = "yellow";
+      corAtual = "amarelo";
+    } else {
+        vaga.style.backgroundColor = "blue";
+        corAtual = "azul";
+    }
+    });
+  });
+  </script>
