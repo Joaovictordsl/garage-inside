@@ -4,178 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Garagem</title>
+    <title>Externa</title>
 </head>
-<header>
-    <button id="botoes" class="interna" ><a href="../inside/inside.html">Área Interna</a></button>
-    <button id="botoes" class="externa" ><a href="../outside/outside.html">Área Externa</a></button>
-    <button id="botoes" class="sair"><a href="../index.html">Sair</a></button>
-  </header>
+    <header>
+        <button id="botoes" class="interna" ><a href="../inside/inside.html">Área Interna</a></button>
+        <button id="botoes" class="externa" ><a href="../outside/outside.html">Área Externa</a></button>
+        <button id="botoes" class="sair"><a href="../index.html">Sair</a></button>
+    </header>
 <body>
+    <div class="parking-lot">
+        <div class="row123123"> 
+            <div id="vaga" class="spot81"><h1>81</h1></div>
+            <div id="vaga" class="spot82"><h1>82</h1></div>
+            <div id="vaga" class="spot83"><h1>83</h1></div>
+            <div id="vaga" class="spot84"><h1>84</h1></div>
 
-    <div class="container1">
-        <div class="vaga"><h1>81</h1></div>
-        <div class="vaga"><h1>82</h1></div>
-        <div class="vaga"><h1>83</h1></div>  
-        <div class="vaga"><h1>84</h1></div>
+        </div>
+
+        <div class="row">
+
+            <div class="spot"><h1>85</h1></div>
+            <div class="spot"><h1>86</h1></div>
+            <div class="spot"><h1>87</h1></div>
+            
+        </div>
+
+        <div class="row1"> 
+            <div id="vaga" class="spot77"><h1>77</h1></div>
+            <div id="vaga" class="spot78"><h1>78</h1></div>
+            <div id="vaga" class="spot79"><h1>79</h1></div>
+            <div id="vaga" class="spot80"><h1>80</h1></div>
+
+        </div>
+
+        <div class="row2">
+            <div id="vaga" class="spot75"><h1>75</h1></div>
+
+        </div>
+
+        <div class="row3">
+            <div id="vaga" class="spot76"><h1>76</h1></div>
+
+        </div>
 
     </div>
 
-    <div class="container2">
-        <div class="vaga"><h1>77</h1></div>
-        <div class="vaga"><h1>78</h1></div>
-        <div class="vaga"><h1>79</h1></div>
-        <div class="vaga"><h1>80</h1></div> 
-    </div>
-
-    <div class="vaga75">
-        <div class="vaga"><h1>75</h1></div>
-    </div>
-
-    <div class="container3">
-        <div class="vaga"><h1>85</h1></div>
-        <div class="vaga"><h1>86</h1></div>
-        <div class="vaga"><h1>87</h1></div>
-
-    </div>
-
-    <div class="vaga76">
-        <div class="vaga"><h1>76</h1></div>
-    </div>
 </body>
 
-    <div class="orientation"><h1>Gire a tela!</h1></div>
-
+<div class="orientation"><h2>Gire a tela!</h2></div>
 </html>
 
 <style>
-    .orientation{
-        display: none;
+    a:link{
+        color:#fff;
+        text-decoration: none;
+    }
+    a:visited{
+        color: #000000;
+        text-decoration: none;
+
     }
 
-#botoes{
-        background-color: rgb(73, 151, 229);
-        border: none;
+
+    #botoes{
+        background-color: rgb(184, 162, 103);
+        border: 1px solid #000000;
         
         border-radius: 10px;
         color: white;
     }
-
-    .container1 h1{
-        color:aliceblue;
-        font-size: x-large;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        transform: rotate(100deg);
-    }
-    .container2 h1{
-        color:aliceblue;
-        font-size: x-large;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        transform: rotate(90deg);
-        text-align: center;
+    .orientation{
+        display: none;
     }
 
-    .container3 h1{
-        font-size: x-large;
-        color:aliceblue;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        
-    }
-    .vaga75 h1{
-        font-size: x-large;
-        color:aliceblue;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        
-    }
-
-    .vaga76 h1{
-        font-size: x-large;
-
-        color:aliceblue;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        transform: rotate(-90deg);
-
-    }
-
-    body{
-        
-        background-image: url("../img/minascentro.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size:1600px 1000px;
-        
-    }
-    img {
-        opacity:0.5;
-    }
-
-    .container1 {
-        transform: rotate(-100deg);
-        position: relative;
-        margin-top: -10%;
-        left: -20%;
-        margin-left: 50%;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-        flex-wrap: wrap;
-    }
-
-    .container2 {
-        left: -10%;
-        top: -150px;
-        transform: rotate(-90deg);
-        position: relative;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-        flex-wrap: wrap;
-    }
-
-    .container3{
-        top:150%;
-        left: 60%;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-    }
-
-
-    .vaga75 {
-        top: 340px;
-        left: 69%;
-        position: relative;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-        flex-wrap: wrap;
-    }
-
-    .vaga76 {
-        transform: rotate(90deg);
-        left:5%;
-        top: 580px;
-        position: relative;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-        flex-wrap: wrap;
-    }
-    .vaga {
-      width: 40px;
-      height: 7rem;
-      background-color: blue;
-      text-align: center;
-      border: 5px solid black;
-    }
-
-
-    @media screen and (max-width: 950px) and (max-height: 500px) and (orientation: landscape) {
-        
-        
-        body{
+body{
         font-family: Arial, Helvetica, sans-serif;
         background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.52), rgba(0, 0, 0, 0.73)) ,url("../img/minascentro.jpg");
         background-repeat: no-repeat;
@@ -183,73 +85,186 @@
         background-position: center;
         background-size:2000px 1200px;
         opacity: 0.9;
-        transform: scale(1.0);
         
-    }
+    } 
 
-        .container1 {
-        transform: rotate(-100deg);
-        position: relative;
-        margin-top: -10%;
-        left: -25%;
-        margin-left: 50%;
+    .row2 .spot75{
+        margin-top: -40px;
+        margin-left: 590px;
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+    }
+    .row3 {
+
         display: flex;
+        margin-left: 150px;
+        margin-top: -30px;  
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 2px;
-        flex-wrap: wrap;
     }
 
-    .container2 {
-        left: -20%;
-        top: -180px;
-        transform: rotate(-90deg);
-        position: relative;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-        flex-wrap: wrap;
-    }
-
-    .container3{
-        top:150%;
-        left: 51%;
-        position: relative;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-        flex-wrap: wrap;
-    }
-
-
-    .vaga75 {
-        top: 200px;
-        left: 69%;
-        position: relative;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-        flex-wrap: wrap;
-    }
-
-    .vaga76 {
+    .row3 .spot76{
+        margin-left: 330px;
+        margin-top: -100px;
         transform: rotate(90deg);
-        left:5%;
-        top: 430px;
-        position: relative;
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2px;
-        flex-wrap: wrap;
-    }
-    .vaga {
-      width: 30px;
-      height: 5rem;
-      background-color: blue;
-      text-align: center;
-      border: 5px solid black;
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
     }
 
-    
+    .row123123 {  
+        display: flex;
+        margin-left: 150px;
+        margin-top: -30px;  
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+        
+} 
+    .row1 {
+          
+        display: flex;
+        margin-left: 100px;
+        margin-top: -20px;  
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+    }
+    .row1 .spot77{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 46px;
+        margin-left: 200px;
+
+    }
+    .row1 .spot78{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 0px;
+        margin-left: -46px;
+
+    }
+    .row1 .spot79{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: -45px;
+        margin-left: -46px;
+
+    }
+    .row1 .spot80{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: -90px;
+        margin-left: -46px;
+
+    }
+
+    .row123123 .spot81{ 
+        transform: rotate(90deg);
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 12px;
+        margin-left: 330px;
+
+    }
+    .row123123 .spot82{ 
+        transform: rotate(90deg); 
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 58px;
+        margin-left: -46px;
+    }
+    .row123123 .spot83{ 
+        transform: rotate(90deg); 
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 104px;
+        margin-left: -46px;
+    }
+    .row123123 .spot84{ 
+        transform: rotate(90deg); 
+        width: 40px;
+        height: 90px;
+        background-image: url("../img/carro.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        border: 2px solid black;
+        margin-top: 150px;
+        margin-left: -46px;
+    }
+
+    .row {  
+        margin-top: -15px;
+        display: flex; 
+        margin-left: 500px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2px;
+}
+
+
+.spot {
+  width: 40px;
+  height: 90px;
+  background-image: url("../img/carro.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: aqua;
+    border: 2px solid black;
+}
+
+ h1{
+    margin-top: 70%;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @media only screen and (orientation: portrait) {
@@ -264,32 +279,10 @@
         background-attachment: fixed;
         background-position: center;
         background-size:2000px 1200px;
+        zoom: 200%;
         opacity: 0.9;
-        transform: scale(0.5);
-        transform-origin: 10% 500px;
         
     }
-
-    .container1{
-        display:none;
-
-    }
-    .container2{
-        display: none;
-    }
-
-    .container3{
-        display: none;
-    }
-
-    .vaga75{
-        display:none;
-    }
-
-    .vaga76{
-        display:none;
-    }
-
 
 
     .orientation{
@@ -305,27 +298,43 @@
         border-radius: 15px;
         color: #fff;
         }
+    
+
+    .parking-lot {
+        display: none;
     }
 
+
+    .orientation{
+        display: flex;
+    }
+    }
 </style>
 
-<script> 
-    const vaga = document.querySelectorAll(".vaga");
+<script>
+    const spots = document.querySelectorAll(".spot");
+		const cores = ["aqua", "red", "yellow"];
 
-    let corAtual = "azul";
+		spots.forEach((spot) => {
+			spot.addEventListener("click", () => {
+				const currentColor = spot.style.backgroundColor;
+				const currentIndex = cores.indexOf(currentColor);
+				const nextIndex = (currentIndex + 1) % cores.length;
+				const nextColor = cores[nextIndex];
+				spot.style.backgroundColor = nextColor;
+			});
+		});
 
-    vaga.forEach(vaga => {
-        vaga.addEventListener("click", function() {
-        if (corAtual === "azul") {
-      vaga.style.backgroundColor = "red";
-      corAtual = "vermelho";
-    } else if(corAtual === "vermelho"){
-      vaga.style.backgroundColor = "yellow";
-      corAtual = "amarelo";
-    } else {
-        vaga.style.backgroundColor = "blue";
-        corAtual = "azul";
-    }
-    });
-  });
-  </script>
+		const squares = document.querySelectorAll("#vaga");
+		const colors = ["aqua", "red", "yellow"];
+
+		squares.forEach((vaga) => {
+			vaga.addEventListener("click", () => {
+				const currentColor = vaga.style.backgroundColor;
+				const currentIndex = colors.indexOf(currentColor);
+				const nextIndex = (currentIndex + 1) % colors.length;
+				const nextColor = colors[nextIndex];
+				vaga.style.backgroundColor = nextColor;
+			});
+		});
+</script>
