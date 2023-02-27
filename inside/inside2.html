@@ -375,7 +375,7 @@ body{
 
     squares.forEach((vaga, index) => {
         // Retrieve the saved color for this square from localStorage, or default to blue if no color is saved
-        const savedColor = sessionStorage.getItem(`vaga-${index}`) || "aqua";
+        const savedColor = localStorage.getItem(`vaga-${index}`) || "aqua";
         vaga.style.backgroundColor = savedColor;
 
         vaga.addEventListener("click", () => {
@@ -386,7 +386,7 @@ body{
             vaga.style.backgroundColor = nextColor;
 
             // Save the new color for this square to localStorage
-            sessionStorage.setItem(`vaga-${index}`, nextColor);
+            localStorage.setItem(`vaga-${index}`, nextColor);
         });
     });
 </script>
